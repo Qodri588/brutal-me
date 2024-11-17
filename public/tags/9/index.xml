@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>9 on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/9/</link>
+    <description>Recent content in 9 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>id-ID</language>
+    <lastBuildDate>Fri, 08 Nov 2024 12:28:49 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acay Nabila video  9</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-video--9/</link>
+      <pubDate>Fri, 08 Nov 2024 12:28:49 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-video--9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabilla Seifuku 9  DoodStream</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-9--doodstream/</link>
+      <pubDate>Sun, 03 Nov 2024 13:43:09 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-9--doodstream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabilla Seifuku 9</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-9/</link>
+      <pubDate>Tue, 24 Sep 2024 09:03:39 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-9/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

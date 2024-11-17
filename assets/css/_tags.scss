@@ -1,0 +1,47 @@
+
+    /** Variabel warna brutalism **/
+    $text-color: #000;
+    $shadow-color: rgba(0, 0, 0, 0.3); // Warna shadow
+    $bg-colors: (
+        "pink": #ff69b4,
+        "yellow": #ffdd00,
+        "green": #00ff00,
+        "cyan": #00ffff,
+        "orange": #ff4500
+      );
+      $border-color: #000;
+      $text-color: #000;
+      $shadow-color: rgba(0, 0, 0, 0.3); // Warna shadow
+  /** Style Tags Brutalism **/
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 8px;
+    
+    
+
+    .tag {
+      align-items: center;
+      padding: 2px 4px; // Ukuran lebih kecil
+      font-size: 0.7rem; // Font lebih kecil
+      font-weight: bold;
+      color: $text-color;
+      background-color: nth(map-values($bg-colors), random(length($bg-colors)));
+      border: 2px solid $border-color; // Border lebih tipis
+      text-transform: capitalize;
+      text-align: center;
+      box-shadow: $box-shadow; // Shadow kasar
+      transition: transform 0.1s ease-in-out;
+      cursor: pointer;
+    
+
+      &:hover {
+        
+        background-color: lighten(nth(map-values($bg-colors), random(length($bg-colors))), 10%);
+        box-shadow: 4px 4px 0 $shadow-color; // Shadow lebih kuat saat hover
+      }
+    }
+  }
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/2/</link>
+    <description>Recent content in 2 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>id-ID</language>
+    <lastBuildDate>Sat, 14 Sep 2024 13:55:11 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acay Nabilla Seifuku Stream 2</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-stream-2/</link>
+      <pubDate>Sat, 14 Sep 2024 13:55:11 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-stream-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabila video  2</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-video--2/</link>
+      <pubDate>Thu, 05 Sep 2024 22:18:11 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-video--2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabila 2</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-2/</link>
+      <pubDate>Thu, 20 Jun 2024 09:39:11 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DoodStream on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/doodstream/</link>
+    <description>Recent content in DoodStream on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>id-ID</language>
+    <lastBuildDate>Sun, 03 Nov 2024 13:43:09 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/doodstream/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acay Nabilla Seifuku 9  DoodStream</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-9--doodstream/</link>
+      <pubDate>Sun, 03 Nov 2024 13:43:09 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabilla-seifuku-9--doodstream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabila 006  DoodStream</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-006--doodstream/</link>
+      <pubDate>Wed, 16 Oct 2024 08:34:24 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-006--doodstream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabila by  DoodStream 1697619714344</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-by--doodstream-1697619714344/</link>
+      <pubDate>Tue, 13 Aug 2024 02:23:24 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-by--doodstream-1697619714344/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabila maenin pentil  DoodStream</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-maenin-pentil--doodstream/</link>
+      <pubDate>Sat, 10 Aug 2024 09:58:58 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-maenin-pentil--doodstream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Acay Nabila by  DoodStream 1697619699778</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-by--doodstream-1697619699778/</link>
+      <pubDate>Tue, 04 Jun 2024 01:46:37 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-by--doodstream-1697619699778/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

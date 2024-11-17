@@ -1,0 +1,16 @@
+baseURL = 'https://example.org/'
+languageCode = "id-ID"
+title = 'My New Hugo Site'
+description = ""
+logo = ""
+[params]
+  cover_link = "https://img.doodcdn.co/snaps/"
+  video_link = "https://d000d.com/e/"
+  download_link = "https://d000d.com/d/"
+
+[outputs]
+  home = ["HTML", "JSON"]
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

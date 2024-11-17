@@ -1,0 +1,29 @@
+<footer>
+  <div class="footer">
+{{ partial "head/footer_script.html" . }}
+  <div class="footer-menu flex">
+    <h4>Social</h4>
+    <ul>
+      <li><a href="https://facebook.com">Facebook</a></li>
+      <li><a href="https://twitter.com">Twitter</a></li>
+      <li><a href="https://instagram.com">Instagram</a></li>
+      <li><a href="https://linkedin.com">LinkedIn</a></li>
+      <li><a href="https://youtube.com">YouTube</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-menu flex">
+    <h4>Site Links</h4>
+   <ul>
+  <li><a href="{{ "pages/about" | absURL }}">About Us</a></li>
+  <li><a href="{{ "pages/contact" | absURL }}">Contact</a></li>
+  <li><a href="{{ "pages/privacy" | absURL }}">Privacy Policy</a></li>
+  <li><a href="{{ "pages/terms" | absURL }}">TOS</a></li>
+  <li><a href="{{ "pages/faq" | absURL }}">FAQ</a></li>
+</ul>
+  </div>
+</div>
+  <div class="copyright">
+    &copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.
+  </div>
+</footer>

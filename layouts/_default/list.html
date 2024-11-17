@@ -1,0 +1,68 @@
+{{ define "main" }}
+  {{ if .Params.cover }}
+    {{ .Content }}
+    <div class="video-list flex">
+      {{ range .Pages }}
+        <div class="video-card items">
+          <div class="video-thumbnail" style="height: 180px">
+            <img src="https://img.doodcdn.co/snaps/{{ .Params.cover }}" alt="{{ .Params.title }}">
+          </div>      
+          <div class="video-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+          <div class="video-details">
+            <a class="categories" href="/categories/{{ replace .Params.foldername " " "-" | lower }}">
+              {{ .Params.foldername }}
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="pagination">
+      {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="pagination-prev">&laquo;</a>
+      {{ end }}
+      {{ range $i, $page := .Paginator.Pagers }}
+        <a href="{{ $page.URL }}" class="pagination-page">{{ add $i 1 }}</a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="pagination-next">&raquo;</a>
+      {{ end }}
+    </div>
+  {{ else }}
+    {{ if or (eq .Kind "term") (eq .Kind "taxonomy") }}
+      <h2 class="list">{{ .Title }}</h2 class="list">
+      <div class="video-list flex">
+        {{ range .Pages }}
+          <div class="video-card items">
+            <div class="video-thumbnail" style="height: 180px">
+              <img src="https://img.doodcdn.co/snaps/{{ .Params.cover }}" alt="{{ .Params.title }}">
+            </div>      
+            <div class="video-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+            <div class="video-details">
+              <a class="categories" href="/categories/{{ replace .Params.foldername " " "-" | lower }}">
+                {{ .Params.foldername }}
+              </a>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+      <div class="pagination">
+        {{ if .Paginator.HasPrev }}
+          <a href="{{ .Paginator.Prev.URL }}" class="pagination-prev">&laquo;</a>
+        {{ end }}
+        {{ range $i, $page := .Paginator.Pagers }}
+          <a href="{{ $page.URL }}" class="pagination-page">{{ add $i 1 }}</a>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+          <a href="{{ .Paginator.Next.URL }}" class="pagination-next">&raquo;</a>
+        {{ end }}
+      </div>
+      {{ if not .Pages }}
+        <p>No content found.</p>
+      {{ end }}
+    {{ else }}
+      <p>No content found.</p>
+    {{ end }}
+  {{ end }}
+{{ end }}

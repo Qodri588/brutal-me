@@ -1,0 +1,62 @@
+/** Header **/
+.header {
+    background-color: map-get($backgrounds, header);
+    color: $color-main;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    border-bottom: map-get($borders, thick);
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: lighten(map-get($backgrounds, header), 10%);
+    }
+  }
+  
+  /** Search Bar **/
+  .search-bar {
+    display: flex;
+    padding: 10px;
+    background-color: map-get($backgrounds, search);
+    border: 3px solid $color-main;
+    border-width: 3px 0;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: lighten(map-get($backgrounds, search), 10%);
+    }
+  
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 1rem;
+      border: map-get($borders, thin);
+      background-color: map-get($backgrounds, input);
+      color: $color-main;
+      outline: none;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: lighten(map-get($backgrounds, input), 10%);
+      }
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      border: map-get($borders, thin);
+      background-color: map-get($backgrounds, button);
+      font-weight: bold;
+      color: $color-main;
+      cursor: pointer;
+      margin-left: 5px;
+      transition: background-color 0.3s, transform 0.2s;
+  
+      &:hover {
+        background-color: lighten(map-get($backgrounds, button), 10%);
+        
+      }
+    }
+  }
+  

@@ -1,0 +1,37 @@
+<div id="container-detail">
+  <h3>Detail</h3>
+  <ul class="list-detail">
+    <li>
+      <span id="det">Title</span>: 
+      <span id="des">&thinsp;{{ .Params.title }}</span>
+    </li>
+    <li>
+      <span id="det">Tanggal</span>
+     {{ $t := "15 Oct 2023" }}: 
+      <span id="des">&thinsp;{{ .Params.date.Format "2 Jan 2006" }}</span>
+    </li>
+    <li>
+      <span id="det">Durasi</span> : 
+      <span id="des">&thinsp;{{ $sec := .Params.length }}{{ printf "%02d:%02d" (mod (div $sec 60) 60) (mod $sec 60) }} </span>
+    </li>
+    <li>
+      <span id="det">Folder</span>: 
+      <span id="des">&thinsp;{{ .Params.foldername }}</span>
+    </li>
+  </ul>
+  <h3 class="Tentang">Tentang Video</h3>
+  <p>Ini adalah deskripsi</p>
+  
+  <h3 class="Tentang">Tags</h3>
+  <ul class="tag-list">
+    {{ range .Params.tags }}
+      <li class="tag"><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+  <h3 class="Tentang">Folder</h3>
+  <ul class="tag-list">
+    {{ range .Params.categories }}
+      <li class="tag"><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+    {{ end }}
+  </ul>
+</div>

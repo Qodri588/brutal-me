@@ -1,0 +1,161 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  a{
+    color: black;
+  }
+  a:visited{
+    color : black;
+  }
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    
+  }
+  @media (min-width: 768px) {
+    .video-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  $bg-body : #F6F6F6;
+$font-color: #042f2e;
+$theme : #016A70;
+$grey-color : #524C42;
+
+@mixin grid ($left, $right){
+  display: grid;
+  grid-template-columns: $left $right;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ani-up{
+    -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+} 
+
+@mixin ani-fadein($s){
+  $duration : $s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@mixin ani-slide-in {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+} 
+
+
+
+main{
+  @include ani-fadein(1s);
+}

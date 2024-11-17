@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>16 on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/16/</link>
+    <description>Recent content in 16 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>id-ID</language>
+    <lastBuildDate>Mon, 04 Nov 2024 05:33:19 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/16/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acay Nabila video  16</title>
+      <link>http://localhost:1313/acay-nabila/acay-nabila-video--16/</link>
+      <pubDate>Mon, 04 Nov 2024 05:33:19 -0800</pubDate>
+      <guid>http://localhost:1313/acay-nabila/acay-nabila-video--16/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

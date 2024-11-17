@@ -1,0 +1,42 @@
+{{ $relatedPosts := .Site.RegularPages.Related . | first 12 }}
+{{ $relatedCount := len $relatedPosts }}
+
+{{ if lt $relatedCount 12 }}
+  {{ $existingPaths := dict }}
+  {{ range $relatedPosts }}
+    {{ $existingPaths = merge $existingPaths (dict .Permalink true) }}
+  {{ end }}
+
+  {{ $additionalPosts := where site.RegularPages "Section" "posts" | shuffle }}
+  {{ $uniqueAdditionalPosts := slice }}
+  {{ range $additionalPosts }}
+    {{ if not (index $existingPaths .Permalink) }}
+      {{ $uniqueAdditionalPosts = $uniqueAdditionalPosts | append . }}
+      {{ $existingPaths = merge $existingPaths (dict .Permalink true) }}
+    {{ end }}
+    {{ if eq (len $uniqueAdditionalPosts) (sub 12 $relatedCount) }}
+      {{ break }}
+    {{ end }}
+  {{ end }}
+
+  {{ $relatedPosts = $relatedPosts | append $uniqueAdditionalPosts }}
+{{ end }}
+
+<div class="video-list flex">
+  {{ range $relatedPosts }}
+    <div class="video-card items">
+
+        <div class="video-thumbnail" style="height: 180px">
+          <img src="https://img.doodcdn.co/snaps/{{ .Params.cover }}" alt="{{ .Params.title }}">
+        </div>      
+        <div class="video-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}
+        </a></div>
+<div class="video-details">
+  <a class="categories"href="/categories/{{ replace .Params.foldername " " "-" | lower }}">
+    {{ .Params.foldername }}
+  </a>
+</div>
+      
+    </div>
+  {{ end }}
+</div>

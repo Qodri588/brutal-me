@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <div class="video-list flex">
+    {{ range .Paginator.Pages }}
+      <div class="video-card items">
+        <a href="{{ .RelPermalink }}">
+          <div class="video-thumbnail">
+            <img src="{{ .Site.Params.cover_link }}{{ .Params.cover }}" alt="{{ .Params.title }}">
+          </div>
+          <div class="video-title">{{ .LinkTitle }}</div>
+          <div class="video-details">{{ .Params.foldername }}</div>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="pagination">
+    {{ if .Paginator.HasPrev }}
+      <a href="{{ .Paginator.Prev.URL }}" class="pagination-prev">&laquo;</a>
+    {{ end }}
+    {{ range $i, $page := .Paginator.Pagers }}
+      <a href="{{ $page.URL }}" class="pagination-page">{{ add $i 1 }}</a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a href="{{ .Paginator.Next.URL }}" class="pagination-next">&raquo;</a>
+    {{ end }}
+  </div>
+{{ end }}
